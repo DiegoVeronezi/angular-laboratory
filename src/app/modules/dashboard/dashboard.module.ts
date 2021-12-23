@@ -5,9 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardPageComponent } from './containers/dashboard-page/dashboard-page.component';
 
 @NgModule({
-  declarations: [
-    DashboardPageComponent
-  ],
+  declarations: [DashboardPageComponent],
   imports: [CommonModule, DashboardRoutingModule],
 })
 export class DashboardModule {}
