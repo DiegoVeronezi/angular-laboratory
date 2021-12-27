@@ -1,9 +1,16 @@
 <aside>
+  <!-- @REFACT to an component or use an array instead -->
   <ul class="aside__list">
-    <a routerLink="/dashboardXXX" class="aside__list--anchor">
+    <a routerLink="overview" class="aside__list--anchor">
       <li class="aside__list__item">
         <img src="assets/imgs/overview-icon.svg" alt="Overview Icon" />
         <span class="aside__list__item--title">Overview</span>
+      </li>
+    </a>
+    <a routerLink="transactions" class="aside__list--anchor">
+      <li class="aside__list__item">
+        <img src="assets/imgs/transactions-icon.svg" alt="Transactions Icon" />
+        <span class="aside__list__item--title">Transactions</span>
       </li>
     </a>
   </ul>
