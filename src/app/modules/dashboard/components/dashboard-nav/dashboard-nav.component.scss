@@ -1,0 +1,36 @@
+@import '/src/assets/scss/variables.scss';
+
+:host {
+  aside {
+    width: 290px;
+    background: map-get($colors, darkPurple);
+
+    .aside__list {
+      overflow: auto;
+      height: 100vh;
+      border-right: 2px solid map-get($colors, white);
+
+      &--anchor {
+        text-decoration: none;
+      }
+
+      &__item {
+        color: map-get($colors, white);
+        padding: 18px;
+        padding-left: 24px;
+        display: flex;
+        align-items: center;
+
+        &--title {
+          margin-left: 18px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          border-left: 6px solid map-get($colors, pink);
+          padding-left: 18px;
+        }
+      }
+    }
+  }
+}
