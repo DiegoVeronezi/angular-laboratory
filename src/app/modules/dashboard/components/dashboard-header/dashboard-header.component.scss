@@ -1,0 +1,58 @@
+@import '/src/assets/scss/variables.scss';
+
+:host {
+  header {
+    top: 0;
+    height: 83px;
+    background: map-get($colors, darkPurple);
+    border-bottom: 2px solid map-get($colors, white);
+
+    .header__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 64px;
+      height: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      &__search {
+        display: flex;
+        align-items: center;
+        background: map-get($colors, darkPurple);
+        padding-left: 34px;
+        border: 1px solid map-get($colors, white);
+        border-radius: 50px;
+        width: 422px;
+        height: 40px;
+
+        &--icon {
+          margin-right: 13px;
+        }
+
+        &--input {
+          flex: 1;
+
+          height: 100%;
+          outline: none;
+          border: none;
+          background: none;
+
+          color: map-get($colors, white);
+        }
+      }
+
+      &__profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--title {
+          margin-left: 11px;
+          font-size: 12px;
+          color: map-get($colors, white);
+        }
+      }
+    }
+  }
+}
