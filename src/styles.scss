@@ -7,14 +7,11 @@ body {
   width: 100%;
   height: 100%;
 
+  display: flex;
+  flex-direction: column;
+
   font-family: 'Poppins', sans-serif;
 
   // DEV PURPOSE
   background-color: #c9cbcf;
-}
-
-app-root {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }

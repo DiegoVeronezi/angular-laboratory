@@ -3,5 +3,6 @@ $colors: (
   black: #000,
   pink: #fd749b,
   darkPurple: #1e0338,
-  secondaryGrey: #9f9f9f,
+  gradient: linear-gradient(to right, #fd749b, #1e0338),
+  gray: #9f9f9f,
 );
