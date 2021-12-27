@@ -1,3 +1,7 @@
-.main {
+.content__main {
   display: flex;
+
+  &__outlet {
+    padding: 20px 40px;
+  }
 }
