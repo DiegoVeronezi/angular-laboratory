@@ -1,13 +1,23 @@
 <aside>
-  <!-- @REFACT to an component or use an array instead -->
+  <!-- @REFACT to an item shared/component -->
   <ul class="aside__list">
-    <a routerLink="overview" class="aside__list--anchor">
+    <a
+      routerLink="overview"
+      class="aside__list--anchor"
+      routerLinkActive="is-active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <li class="aside__list__item">
         <img src="assets/imgs/overview-icon.svg" alt="Overview Icon" />
         <span class="aside__list__item--title">Overview</span>
       </li>
     </a>
-    <a routerLink="transactions" class="aside__list--anchor">
+    <a
+      routerLink="transactions"
+      class="aside__list--anchor"
+      routerLinkActive="is-active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <li class="aside__list__item">
         <img src="assets/imgs/transactions-icon.svg" alt="Transactions Icon" />
         <span class="aside__list__item--title">Transactions</span>
