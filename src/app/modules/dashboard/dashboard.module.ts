@@ -7,6 +7,7 @@ import { DashboardHeaderComponent } from './components/dashboard-header/dashboar
 import { DashboardNavComponent } from './components/dashboard-nav/dashboard-nav.component';
 import { DashboardOverviewComponent } from './containers/dashboard-overview/dashboard-overview.component';
 import { DashboardTransactionsComponent } from './containers/dashboard-transactions/dashboard-transactions.component';
+import { DashboardUsersComponent } from './containers/dashboard-users/dashboard-users.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { DashboardTransactionsComponent } from './containers/dashboard-transacti
     DashboardNavComponent,
     DashboardOverviewComponent,
     DashboardTransactionsComponent,
+    DashboardUsersComponent,
   ],
   imports: [CommonModule, DashboardRoutingModule],
 })

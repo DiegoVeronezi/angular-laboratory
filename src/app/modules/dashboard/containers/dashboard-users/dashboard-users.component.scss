@@ -1,0 +1,31 @@
+@import '/src/assets/scss/variables.scss';
+
+.users__wrapper {
+  color: map-get($colors, white);
+
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    &__access {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 12px;
+
+      &__account {
+        &::before {
+          content: '▴';
+          position: absolute;
+          margin-left: 135px;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+  }
+}
