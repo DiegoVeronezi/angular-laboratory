@@ -14,6 +14,7 @@
       font-size: 12px;
 
       &__account {
+        margin-right: 15px;
         &::before {
           content: '▴';
           position: absolute;
@@ -26,6 +27,46 @@
       font-size: 14px;
       font-weight: bold;
       margin-top: 30px;
+    }
+  }
+
+  .list-wrapper {
+    border: 1px solid map-get($colors, white);
+    border-radius: 5px;
+    margin-top: 20px;
+
+    // @TODO - Check this padding
+    padding: 30px;
+
+    table {
+      width: 100%;
+
+      thead {
+        th {
+          padding: 14px;
+          text-align: left;
+          text-transform: uppercase;
+
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid map-get($colors, white);
+          cursor: pointer;
+
+          td {
+            padding: 16px 14px;
+
+            &:last-child {
+              text-align: right;
+            }
+          }
+        }
+      }
     }
   }
 }

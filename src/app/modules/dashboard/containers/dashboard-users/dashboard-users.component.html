@@ -6,5 +6,36 @@
     </div>
     <p class="header__title">Users</p>
   </header>
-  <div class="list"></div>
+  <!-- @TODO - Extract to a component -->
+  <div class="list-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Account Status</th>
+          <th>User Name</th>
+          <th>Email</th>
+          <th class="align-right">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>PENDING</td>
+          <td>John Doe</td>
+          <td>johndoe@ghost.com</td>
+          <td class="align-right">
+            <img src="assets/imgs/actions-icon.svg" alt="User Actions" />
+          </td>
+        </tr>
+        <tr>
+          <td>PENDING</td>
+          <td>John Doe</td>
+          <td>johndoe@ghost.com</td>
+          <td class="align-right">
+            <img src="assets/imgs/actions-icon.svg" alt="User Actions" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
