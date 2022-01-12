@@ -11,7 +11,5 @@ body {
   flex-direction: column;
 
   font-family: 'Poppins', sans-serif;
-
-  // DEV PURPOSE
-  background-color: #c9cbcf;
+  background-color: map-get($colors, darkPurple);
 }
