@@ -1,15 +1,13 @@
 @import '/src/assets/scss/variables.scss';
 
 :host {
+  border-right: 2px solid map-get($colors, white);
+
   aside {
     width: 290px;
     background: map-get($colors, darkPurple);
 
     .aside__list {
-      overflow: auto;
-      height: calc(100vh - 85px);
-      border-right: 2px solid map-get($colors, white);
-
       &--anchor {
         text-decoration: none;
       }
