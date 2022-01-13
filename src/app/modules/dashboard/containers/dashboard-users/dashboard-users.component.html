@@ -6,7 +6,7 @@
     </div>
     <p class="header__title">Users</p>
   </header>
-  <!-- @TODO - Extract to a component -->
+
   <div class="list-wrapper">
     <table class="table">
       <thead class="table__header">
@@ -19,7 +19,7 @@
       </thead>
 
       <tbody class="table__body">
-        <tr class="table__body__row" *ngFor="let user of mockArr">
+        <tr class="table__body__row" *ngFor="let user of mockArr; let i = index">
           <td class="table__body__cell">
             <div class="table__body__cell__account-status" [ngClass]="getAccountStatusClass(user.status)">
               {{ user.status }}
@@ -28,8 +28,16 @@
           <td class="table__body__cell">{{ user.name }}</td>
           <td class="table__body__cell">{{ user.email }}</td>
           <td class="table__body__cell">
-            <div class="table__body__cell--img">
-              <img src="assets/imgs/actions-icon.svg" alt="User Actions" />
+            <div appDropdown>
+              <div class="table__body__cell--img">
+                <img src="assets/imgs/actions-icon.svg" alt="User Actions" />
+              </div>
+              <div class="dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__list__item">View Details</li>
+                  <li class="dropdown__list__item">Block User</li>
+                </ul>
+              </div>
             </div>
           </td>
         </tr>
