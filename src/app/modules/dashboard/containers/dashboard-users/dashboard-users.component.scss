@@ -35,8 +35,7 @@
     border-radius: 5px;
     margin-top: 20px;
 
-    // @TODO - Check this padding
-    padding: 30px;
+    padding: 30px 90px;
 
     .table {
       width: 100%;
@@ -60,6 +59,11 @@
 
         &__cell {
           padding: 16px 14px;
+
+          // div to handle dropdown area inside td
+          & > div {
+            display: inline-block;
+          }
 
           &:last-child {
             text-align: right;
@@ -94,5 +98,58 @@
         }
       }
     }
+  }
+}
+
+// TODO: adjust styles and maybe html
+.dropdown {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  margin: 10px 0px 0px -20px;
+  padding: 10px 0px;
+
+  &__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid map-get($colors, white);
+    color: map-get($colors, gray);
+    background: map-get($colors, white);
+    border-radius: 5px;
+
+    &__item {
+      padding: 10px;
+
+      &:first-child {
+        border-bottom: 1px solid map-get($colors, gray);
+      }
+
+      &:last-child {
+        padding: 10px 17px;
+      }
+
+      &:hover {
+        &:last-child {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }
+
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: map-get($colors, gradient);
+        color: map-get($colors, white);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.open {
+  & > .dropdown {
+    display: inline;
   }
 }
