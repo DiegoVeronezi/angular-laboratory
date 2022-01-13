@@ -69,6 +69,28 @@
             display: inline-block;
             cursor: pointer;
           }
+
+          &__account-status {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            color: map-get($colors, white);
+            background: map-get($colors, gradient);
+            border-radius: 15px;
+            padding: 8px 20px;
+
+            &--active {
+              background: map-get($colors, lightGreen);
+            }
+
+            &--down {
+              background: map-get($colors, tomato);
+            }
+
+            &--pending {
+              background: map-get($colors, gradient);
+            }
+          }
         }
       }
     }
