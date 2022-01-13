@@ -9,6 +9,8 @@ import { DashboardOverviewComponent } from './containers/dashboard-overview/dash
 import { DashboardTransactionsComponent } from './containers/dashboard-transactions/dashboard-transactions.component';
 import { DashboardUsersComponent } from './containers/dashboard-users/dashboard-users.component';
 
+import { DropdownModule } from '../../shared/directives/dropdown/dropdown.module';
+
 @NgModule({
   declarations: [
     DashboardPageComponent,
@@ -18,6 +20,6 @@ import { DashboardUsersComponent } from './containers/dashboard-users/dashboard-
     DashboardTransactionsComponent,
     DashboardUsersComponent,
   ],
-  imports: [CommonModule, DashboardRoutingModule],
+  imports: [CommonModule, DashboardRoutingModule, DropdownModule],
 })
 export class DashboardModule {}
