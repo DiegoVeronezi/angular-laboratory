@@ -38,11 +38,11 @@
     // @TODO - Check this padding
     padding: 30px;
 
-    table {
+    .table {
       width: 100%;
 
-      thead {
-        th {
+      &__header {
+        &__item {
           padding: 14px;
           text-align: left;
           text-transform: uppercase;
@@ -53,17 +53,21 @@
         }
       }
 
-      tbody {
-        tr {
+      &__body {
+        &__row {
           border-bottom: 1px solid map-get($colors, white);
-          cursor: pointer;
+        }
 
-          td {
-            padding: 16px 14px;
+        &__item {
+          padding: 16px 14px;
 
-            &:last-child {
-              text-align: right;
-            }
+          &:last-child {
+            text-align: right;
+          }
+
+          &--img {
+            display: inline-block;
+            cursor: pointer;
           }
         }
       }

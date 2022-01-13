@@ -8,31 +8,35 @@
   </header>
   <!-- @TODO - Extract to a component -->
   <div class="list-wrapper">
-    <table>
-      <thead>
+    <table class="table">
+      <thead class="table__header">
         <tr>
-          <th>Account Status</th>
-          <th>User Name</th>
-          <th>Email</th>
-          <th class="align-right">Action</th>
+          <th class="table__header__item">Account Status</th>
+          <th class="table__header__item">User Name</th>
+          <th class="table__header__item">Email</th>
+          <th class="table__header__item">Action</th>
         </tr>
       </thead>
 
-      <tbody>
-        <tr>
-          <td>PENDING</td>
-          <td>John Doe</td>
-          <td>johndoe@ghost.com</td>
-          <td class="align-right">
-            <img src="assets/imgs/actions-icon.svg" alt="User Actions" />
+      <tbody class="table__body">
+        <tr class="table__body__row">
+          <td class="table__body__item">PENDING</td>
+          <td class="table__body__item">John Doe</td>
+          <td class="table__body__item">johndoe@ghost.com</td>
+          <td class="table__body__item">
+            <div class="table__body__item--img">
+              <img src="assets/imgs/actions-icon.svg" alt="User Actions" />
+            </div>
           </td>
         </tr>
-        <tr>
-          <td>PENDING</td>
-          <td>John Doe</td>
-          <td>johndoe@ghost.com</td>
-          <td class="align-right">
-            <img src="assets/imgs/actions-icon.svg" alt="User Actions" />
+        <tr class="table__body__row">
+          <td class="table__body__item">PENDING</td>
+          <td class="table__body__item">John Doe</td>
+          <td class="table__body__item">johndoe@ghost.com</td>
+          <td class="table__body__item">
+            <div class="table__body__item--img">
+              <img src="assets/imgs/actions-icon.svg" alt="User Actions" />
+            </div>
           </td>
         </tr>
       </tbody>
