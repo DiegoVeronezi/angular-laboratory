@@ -60,18 +60,17 @@
         &__cell {
           padding: 16px 14px;
 
-          // div to handle dropdown area inside td
-          & > div {
+          &__actions {
             display: inline-block;
+
+            &--icon {
+              display: inline-block;
+              cursor: pointer;
+            }
           }
 
           &:last-child {
             text-align: right;
-          }
-
-          &--actions {
-            display: inline-block;
-            cursor: pointer;
           }
 
           &__account-status {
@@ -101,7 +100,6 @@
   }
 }
 
-// TODO: adjust styles and maybe html
 .dropdown {
   position: absolute;
   display: none;
