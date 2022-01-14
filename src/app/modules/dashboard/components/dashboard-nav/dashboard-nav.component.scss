@@ -2,13 +2,17 @@
 
 :host {
   aside {
+    // @for handling all height and border for aside when over scrolled
+    height: 100%;
     width: 290px;
     background: map-get($colors, darkPurple);
+    border-right: 2px solid map-get($colors, white);
 
     .aside__list {
       overflow: auto;
+
+      // @for handling aside without header pxs when have no content full or scroll on outlet
       height: calc(100vh - 85px);
-      border-right: 2px solid map-get($colors, white);
 
       &--anchor {
         text-decoration: none;

@@ -12,6 +12,17 @@
       </li>
     </a>
     <a
+      routerLink="users"
+      class="aside__list--anchor"
+      routerLinkActive="is-active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <li class="aside__list__item">
+        <img src="assets/imgs/users-icon.svg" alt="Users Icon" />
+        <span class="aside__list__item--title">Users</span>
+      </li>
+    </a>
+    <a
       routerLink="transactions"
       class="aside__list--anchor"
       routerLinkActive="is-active"
