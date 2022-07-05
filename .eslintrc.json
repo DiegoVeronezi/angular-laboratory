@@ -5,7 +5,7 @@
     {
       "files": ["*.ts"],
       "parserOptions": {
-        "project": ["tsconfig.json", "e2e/tsconfig.json"],
+        "project": ["tsconfig.json"],
         "createDefaultProgram": true
       },
       "extends": [
@@ -32,7 +32,14 @@
             "style": "kebab-case"
           }
         ],
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "auto"
+          }
+        ],
         "import/no-unresolved": "off",
+        "import/no-extraneous-dependencies": "off",
         "import/prefer-default-export": "off",
         "class-methods-use-this": "off",
         "lines-between-class-members": "off",
