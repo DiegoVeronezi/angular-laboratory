@@ -38,14 +38,11 @@
             "endOfLine": "auto"
           }
         ],
-        "@typescript-eslint/no-useless-constructor": "off",
-        "@angular-eslint/no-empty-lifecycle-method": "off",
         "import/no-unresolved": "off",
         "import/no-extraneous-dependencies": "off",
         "import/prefer-default-export": "off",
         "class-methods-use-this": "off",
         "lines-between-class-members": "off",
-        "no-plusplus": "off",
         "no-console": "off"
       }
     },
