@@ -11,6 +11,11 @@
     "lint": "ng lint",
     "format": "npx prettier src/**/*.{js,ts,html,css,scss} --write"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format && npm lint"
+    }
+  },
   "jest": {
     "preset": "jest-preset-angular",
     "setupFilesAfterEnv": [
