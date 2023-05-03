@@ -1,12 +1,13 @@
-@import './assets/scss/reset.scss';
-@import './assets/scss/variables.scss';
-@import './assets/scss/font.scss';
+@use './assets/scss/reset';
+@use './assets/scss/variables';
+@use './assets/scss/font';
+@use 'sass:map';
 
 html,
 body {
   display: flex;
   flex-direction: column;
-
+  color: map.get(variables.$colors, white);
   font-family: 'Poppins', sans-serif;
-  background-color: map-get($colors, darkPurple);
+  background-color: map.get(variables.$colors, darkPurple);
 }

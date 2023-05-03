@@ -1,1 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700');
+$poppins-font-path: '/assets/fonts';
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('#{$poppins-font-path}/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('#{$poppins-font-path}/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
