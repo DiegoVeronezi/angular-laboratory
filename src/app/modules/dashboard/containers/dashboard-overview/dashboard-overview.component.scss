@@ -1,0 +1,33 @@
+@use '/src/assets/scss/variables';
+@use 'sass:map';
+
+.container-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 170px;
+  border: 2px solid map.get(variables.$colors, snow);
+  border-radius: 10px;
+
+  #chart {
+    border: 1px solid;
+    position: relative;
+    z-index: 1;
+
+    #path-one {
+      position: absolute;
+      top: 12px;
+      right: 2px;
+      z-index: -1;
+      transform: rotate(-4deg);
+    }
+
+    #path-two {
+      position: absolute;
+      bottom: 17px;
+      right: 2px;
+      z-index: -1;
+      transform: rotate(-1deg);
+    }
+  }
+}

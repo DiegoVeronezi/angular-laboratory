@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { NgApexchartsModule } from 'ng-apexcharts';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardPageComponent } from './containers/dashboard-page/dashboard-page.component';
 import { DashboardHeaderComponent } from './components/dashboard-header/dashboard-header.component';
@@ -20,6 +21,6 @@ import { DropdownModule } from '../../shared/directives/dropdown/dropdown.module
     DashboardTransactionsComponent,
     DashboardUsersComponent,
   ],
-  imports: [CommonModule, DashboardRoutingModule, DropdownModule],
+  imports: [CommonModule, DashboardRoutingModule, DropdownModule, NgApexchartsModule],
 })
 export class DashboardModule {}

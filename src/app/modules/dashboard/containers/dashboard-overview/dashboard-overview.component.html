@@ -1,1 +1,17 @@
-<p>dashboard-overview works!</p>
+<div class="container-info">
+  <div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [plotOptions]="chartOptions.plotOptions"
+      [labels]="chartOptions.labels"
+      [stroke]="chartOptions.stroke"
+      [fill]="chartOptions.fill"
+    ></apx-chart>
+    <img id="path-one" src="/assets/imgs/path-chart-one.svg" alt="Path Chart One" />
+    <img id="path-two" src="/assets/imgs/path-chart-two.svg" alt="Path Chart Two" />
+  </div>
+  <div>
+    <h2>Total Number Of Transaction</h2>
+  </div>
+</div>
